@@ -85,6 +85,7 @@ public class RedisConfig {
         jedisConnectionFactory.setDatabase(database);
         return jedisConnectionFactory;
     }
+
     @Bean
     public RedisTemplate<String, Object> redisTemplateObject() throws Exception {
         RedisTemplate<String, Object> redisTemplateObject = new RedisTemplate<String, Object>();

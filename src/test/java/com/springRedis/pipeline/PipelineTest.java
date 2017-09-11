@@ -12,6 +12,8 @@ import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.annotation.Resource;
+
 
 /**
  * @author liaoyubo
@@ -50,6 +52,7 @@ public class PipelineTest {
         });
         System.out.println("b:"+redisTemplate.opsForValue().get("b"));
         System.out.println("a:"+redisTemplate.opsForValue().get("a"));
-    }
 
+
+    }
 }
