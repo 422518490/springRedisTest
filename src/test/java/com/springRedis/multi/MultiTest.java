@@ -34,7 +34,9 @@ public class MultiTest {
             valueOperations.set("multiTest",1);
             valueOperations.increment("multiTest",2);
             Object o = valueOperations.get("multiTest");
+            System.out.println(o);
             List list = redisTemplate.exec();
+            o = valueOperations.get("multiTest");
             System.out.println(list);
             System.out.println(o);
         }
